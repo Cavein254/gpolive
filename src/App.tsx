@@ -1,10 +1,11 @@
 import './App.css';
+import Header from './components/header/Header';
 
 function App() {
   return (
-    <div>
-      <h1>GPOL</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
