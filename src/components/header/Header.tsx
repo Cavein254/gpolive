@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { BsFan } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
+import Overlay from '../overlay/Overlay';
 import { HeaderLinks } from './LinkData';
 import './styles.css';
 const StyledSignUp = styled(Button)`
@@ -27,9 +28,13 @@ const Header = () => {
   });
   return (
     <Box component="nav">
+      {isOpen && <Overlay />}
       <Box className="header-container">
         <Box className="header-icon-container">
-          <GiHamburgerMenu className="header-icon" />
+          <GiHamburgerMenu
+            className="header-icon"
+            onClick={() => setIsOpen(!isOpen)}
+          />
         </Box>
         <Box className="header-details">
           <BsFan className="header-company-logo" />

@@ -1,0 +1,7 @@
+.overlay-container {
+  position: absolute;
+  z-index: 10;
+  background-color: #ff6600;
+  width: 100vw;
+  height: 100vh;
+}
