@@ -2,6 +2,7 @@ import { Box, Button, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { BsFan } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 import './styles.css';
 const StyledSignUp = styled(Button)`
   background-color: #ff6600;
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <Box component="nav">
       <Box className="header-container">
-        <Box>
+        <Box className="header-icon-container">
           <GiHamburgerMenu className="header-icon" />
         </Box>
         <Box className="header-details">
@@ -33,6 +34,14 @@ const Header = () => {
           >
             GPOL
           </Typography>
+        </Box>
+        <Box>
+          <Box className="header-links">
+            <Link to="">Home</Link>
+            <Link to="">About Us</Link>
+            <Link to="">Testimonials</Link>
+            <Link to="">Contact Us</Link>
+          </Box>
         </Box>
         <Box className="header-btns">
           <Button
