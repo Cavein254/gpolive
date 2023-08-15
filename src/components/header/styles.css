@@ -6,3 +6,12 @@
 .header-icon {
   font-size: 2rem;
 }
+.header-company-logo {
+  color: #f60;
+  font-size: 1.4rem;
+}
+.header-details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
