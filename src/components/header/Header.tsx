@@ -9,7 +9,6 @@ const StyledSignUp = styled(Button)`
   color: #fff;
   font-size: 0.8rem;
   border-radius: 0;
-
   '&:hover': {
     background-color: '#fff';
     color: '#ff6600';
@@ -35,26 +34,31 @@ const Header = () => {
             GPOL
           </Typography>
         </Box>
-        <Box>
+        <Box className="header-links-container">
           <Box className="header-links">
-            <Link to="">Home</Link>
-            <Link to="">About Us</Link>
-            <Link to="">Testimonials</Link>
-            <Link to="">Contact Us</Link>
+            <Link to="/">Home</Link>
+            <Link to="#about">About Us</Link>
+            <Link to="#testimony">Testimonials</Link>
+            <Link to="#contact">Contact Us</Link>
           </Box>
         </Box>
         <Box className="header-btns">
-          <Button
-            variant="text"
-            className="header-login-btn"
-            sx={{
-              marginRight: '0.4rem',
-              fontSize: '1rem',
-            }}
-          >
-            Log In
-          </Button>
-          <StyledSignUp variant="contained">Sign Up</StyledSignUp>
+          <Link to="/login" className="header-link">
+            <Button
+              variant="text"
+              className="header-login-btn"
+              sx={{
+                marginRight: '0.4rem',
+                fontSize: '1rem',
+              }}
+            >
+              Log In
+            </Button>
+          </Link>
+
+          <Link to="/register" className="header-link">
+            <StyledSignUp variant="contained">Sign Up</StyledSignUp>
+          </Link>
         </Box>
       </Box>
     </Box>

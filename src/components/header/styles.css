@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 350px;
 }
 .header-icon {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 .header-company-logo {
   color: #f60;
@@ -43,8 +44,46 @@
   }
 }
 @media only screen and (min-width: 801px) {
+  .header-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
   .header-links {
     display: block;
     visibility: visible;
+  }
+  .header-links > a {
+    text-decoration: none;
+    margin-right: 1rem;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #f60;
+  }
+  .header-links > a:hover {
+    border-bottom: 0.4rem solid rgb(143, 62, 8);
+    color: rgb(143, 62, 8);
+    text-decoration: none;
+  }
+  .header-links > a:active {
+    border-bottom: 0.4rem solid rgb(143, 62, 8);
+    color: rgb(143, 62, 8);
+    text-decoration: none;
+  }
+  .header-link > a {
+    text-decoration: none;
+  }
+  .header-icon-container {
+    visibility: hidden;
+    display: none;
+  }
+  .header-details {
+    display: flex;
+    justify-content: unset;
+  }
+  .header-login-btn {
+    visibility: visible;
+    display: block;
   }
 }
