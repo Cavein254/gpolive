@@ -1,7 +1,7 @@
 .overlay-container {
   position: absolute;
   z-index: 10;
-  background-color: #ff6600;
+  background-color: #fff;
   width: 100vw;
   height: 100vh;
 }
@@ -12,10 +12,45 @@
   padding: 2rem;
 }
 .overlay-close-btn {
-  color: #fff;
+  color: #ff6600;
   text-align: right;
   font-size: 2rem;
 }
+.overlay-icon {
+  color: #ff6600;
+  font-size: 4rem;
+}
 .overlay-links-container {
   margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay-link > a {
+  text-decoration: none;
+  color: #ff6600;
+  font-size: 2rem;
+  font-family: Poppins;
+  font-weight: 900;
+}
+.overlay-link > a:hover {
+}
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+  .overlay-container {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .overlay-container {
+    display: none;
+    visibility: hidden;
+  }
 }

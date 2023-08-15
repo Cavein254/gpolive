@@ -1,6 +1,7 @@
-import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Box, Stack } from '@mui/system';
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { BsFan } from 'react-icons/bs';
+
 import { Link } from 'react-router-dom';
 import { HeaderLinks } from '../header/LinkData';
 import './styles.css';
@@ -12,11 +13,11 @@ type Props = {
 const Overlay = ({ isOpen, setIsOpen }: Props) => {
   const links = HeaderLinks.map((link) => {
     return (
-      <Box key={link.id}>
-        <Link to={link.path}>
-          <Typography variant="h2">{link.name}</Typography>
-        </Link>
-      </Box>
+      <Stack key={link.id}>
+        <Box className="overlay-link">
+          <Link to={link.path}>{link.name}</Link>
+        </Box>
+      </Stack>
     );
   });
   return (
@@ -27,7 +28,12 @@ const Overlay = ({ isOpen, setIsOpen }: Props) => {
           onClick={() => setIsOpen(!isOpen)}
         />
       </Box>
-      <Box className="overlay-links-container">{links}</Box>
+      <Box className="overlay-links-container">
+        <Box>
+          <BsFan className="overlay-icon" />
+        </Box>
+        <Box className="overlay-links-wrapper">{links}</Box>
+      </Box>
       <Box></Box>
     </Box>
   );
