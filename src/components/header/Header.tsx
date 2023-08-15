@@ -28,7 +28,7 @@ const Header = () => {
   });
   return (
     <Box component="nav">
-      {isOpen && <Overlay />}
+      {isOpen && <Overlay isOpen={isOpen} setIsOpen={setIsOpen} />}
       <Box className="header-container">
         <Box className="header-icon-container">
           <GiHamburgerMenu

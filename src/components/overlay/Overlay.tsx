@@ -1,10 +1,15 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import { AiFillCloseCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { HeaderLinks } from '../header/LinkData';
 import './styles.css';
 
-const Overlay = () => {
+type Props = {
+  isOpen: Boolean;
+  setIsOpen(value: Boolean): () => void;
+};
+const Overlay = ({ isOpen, setIsOpen }: Props) => {
   const links = HeaderLinks.map((link) => {
     return (
       <Box key={link.id}>
@@ -16,7 +21,13 @@ const Overlay = () => {
   });
   return (
     <Box className="overlay-container">
-      <Box>{links}</Box>
+      <Box className="overlay-close-container">
+        <AiFillCloseCircle
+          className="overlay-close-btn"
+          onClick={() => setIsOpen(!isOpen)}
+        />
+      </Box>
+      <Box className="overlay-links-container">{links}</Box>
       <Box></Box>
     </Box>
   );

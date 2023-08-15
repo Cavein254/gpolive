@@ -5,3 +5,17 @@
   width: 100vw;
   height: 100vh;
 }
+.overlay-close-container {
+  display: flex;
+  justify-content: end;
+  align-items: left;
+  padding: 2rem;
+}
+.overlay-close-btn {
+  color: #fff;
+  text-align: right;
+  font-size: 2rem;
+}
+.overlay-links-container {
+  margin-left: 2rem;
+}
