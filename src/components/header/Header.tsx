@@ -1,8 +1,10 @@
 import { Box, Button, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { useState } from 'react';
 import { BsFan } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
+import { HeaderLinks } from './LinkData';
 import './styles.css';
 const StyledSignUp = styled(Button)`
   background-color: #ff6600;
@@ -15,6 +17,14 @@ const StyledSignUp = styled(Button)`
   }
 `;
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const linkNavs = HeaderLinks.map((link) => {
+    return (
+      <span key={link.id} className="header-links">
+        <Link to={link.path}>{link.name}</Link>
+      </span>
+    );
+  });
   return (
     <Box component="nav">
       <Box className="header-container">
@@ -35,12 +45,7 @@ const Header = () => {
           </Typography>
         </Box>
         <Box className="header-links-container">
-          <Box className="header-links">
-            <Link to="/">Home</Link>
-            <Link to="#about">About Us</Link>
-            <Link to="#testimony">Testimonials</Link>
-            <Link to="#contact">Contact Us</Link>
-          </Box>
+          <Box className="header-links-wrapper">{linkNavs}</Box>
         </Box>
         <Box className="header-btns">
           <Link to="/login" className="header-link">
@@ -55,7 +60,6 @@ const Header = () => {
               Log In
             </Button>
           </Link>
-
           <Link to="/register" className="header-link">
             <StyledSignUp variant="contained">Sign Up</StyledSignUp>
           </Link>

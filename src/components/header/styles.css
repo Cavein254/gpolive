@@ -44,7 +44,16 @@
   }
 }
 @media only screen and (min-width: 801px) {
+  .header-details {
+    display: flex;
+    flex-grow: 0;
+  }
   .header-links-container {
+    display: flex;
+    justify-content: unset;
+    flex-grow: 1;
+  }
+  .header-links-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
