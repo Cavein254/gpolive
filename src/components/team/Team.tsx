@@ -58,8 +58,35 @@ const Team = () => {
     );
   });
   return (
-    <Box className="team" component="section">
-      {teams}
+    <Box component="section" className="team" id="team">
+      <Box>
+        <Box>
+          <Typography
+            variant="h4"
+            sx={{
+              fontFamily: 'Roboto',
+              fontWeight: '100',
+              fontSize: '1.2rem',
+              textAlign: 'center',
+              textTransform: 'uppercase',
+            }}
+          >
+            Team
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{
+              fontFamily: 'Poppins',
+              fontWeight: '900',
+              fontSize: '1.8rem',
+              textAlign: 'center',
+            }}
+          >
+            Meet our Team{' '}
+          </Typography>
+        </Box>
+      </Box>
+      <Box className="team-wrapper">{teams}</Box>
     </Box>
   );
 };
