@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import AboutImg from '../../assets/about.jpg';
 import './styles.css';
 const About = () => {
@@ -41,6 +41,7 @@ const About = () => {
             consectetur temporibus, veritatis tempore. Qui harum laudantium
             incidunt hic placeat veritatis, labore officiis.
           </Typography>
+          <Button variant="outlined">Learn More</Button>
         </Box>
         <Box className="about-us-img-container">
           <img src={AboutImg} alt="aboutus" className="about-us-img" />
