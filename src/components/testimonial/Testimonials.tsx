@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import './styles.css';
 
 const Testimonials = () => {
   return (
@@ -28,6 +29,25 @@ const Testimonials = () => {
           >
             What Clients Say about Us
           </Typography>
+        </Box>
+        <Box>
+          <Box>
+            <Box>
+              <Box></Box>
+            </Box>
+            <Box>
+              <Box className="testimonial-text">
+                <Typography variant="h5">
+                  Get a fully retina ready site when you build with Startup
+                  Framework. Websites look sharper and more gorgeous on devices
+                  with retina display support
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="h5">Rayhan Curran</Typography>
+              </Box>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>
