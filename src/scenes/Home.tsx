@@ -1,6 +1,5 @@
 import { Box } from '@mui/system';
 import About from '../components/about/About';
-import Header from '../components/header/Header';
 import Hero from '../components/hero/Hero';
 import Services from '../components/services/Services';
 import Testimonials from '../components/testimonial/Testimonials';
@@ -12,8 +11,6 @@ const Home = () => {
         margin: '1rem',
       }}
     >
-      {' '}
-      <Header />
       <Hero />
       <About />
       <Services />
