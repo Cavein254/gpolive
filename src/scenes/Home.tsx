@@ -2,6 +2,7 @@ import { Box } from '@mui/system';
 import About from '../components/about/About';
 import Hero from '../components/hero/Hero';
 import Services from '../components/services/Services';
+import Team from '../components/team/Team';
 import Testimonials from '../components/testimonial/Testimonials';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <About />
       <Services />
       <Testimonials />
+      <Team />
     </Box>
   );
 };

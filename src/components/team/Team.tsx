@@ -1,36 +1,23 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Stack } from '@mui/material';
+import { BsFacebook, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import './styles.css';
+
 const Team = () => {
   return (
-    <Box>
-      <Box>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: 'Roboto',
-            fontWeight: '100',
-            fontSize: '1.2rem',
-            textAlign: 'center',
-            textTransform: 'uppercase',
-          }}
-        >
-          Our Team
-        </Typography>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: 'Merriweather',
-            fontSize: '1.4rem',
-            fontWeight: '400',
-          }}
-        >
-          Meet the Team
-        </Typography>
-      </Box>
-      <Box>
+    <Box className="team" component="section">
+      <Box className="team-container">
         <Box></Box>
-        <Box></Box>
-        <Box></Box>
+        <Box className="team-social">
+          <Stack>
+            <BsFacebook className="team-icon" />
+          </Stack>
+          <Stack>
+            <BsTwitter className="team-icon" />
+          </Stack>
+          <Stack>
+            <BsWhatsapp className="team-icon" />
+          </Stack>
+        </Box>
       </Box>
     </Box>
   );
