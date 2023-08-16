@@ -6,7 +6,7 @@ import './style.css';
 
 const Hero = () => {
   return (
-    <Box className="hero-container">
+    <Box className="hero-container" component="section" id="hero">
       <Box className="hero-text">
         <Box>
           <Typography
