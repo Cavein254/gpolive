@@ -1,7 +1,44 @@
 import { Box, Typography } from '@mui/material';
 import './styles.css';
+import { TestimonialData } from './testmonydata';
 
 const Testimonials = () => {
+  const testimonials = TestimonialData.map((item) => {
+    return (
+      <Box className="testimonial-item" key={item.id}>
+        <Box>
+          <Box className="testimonial-img-container">
+            <img className="testimonial-img" alt={item.name} src={item.url} />
+          </Box>
+        </Box>
+        <Box className="testimonial-text-container">
+          <Box className="testimonial-text">
+            <Typography
+              variant="h5"
+              sx={{
+                fontFamily: 'Poppins',
+                fontSize: '1rem',
+                fontWeight: '400',
+              }}
+            >
+              {item.comment}
+            </Typography>
+          </Box>
+          <Box className="testimonial-name">
+            <Typography
+              variant="h5"
+              sx={{
+                color: 'lightgray',
+                textTransform: 'uppercase',
+              }}
+            >
+              {item.name}
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
+    );
+  });
   return (
     <Box component="section" id="testimonials">
       <Box>
@@ -30,25 +67,7 @@ const Testimonials = () => {
             What Clients Say about Us
           </Typography>
         </Box>
-        <Box>
-          <Box>
-            <Box>
-              <Box></Box>
-            </Box>
-            <Box>
-              <Box className="testimonial-text">
-                <Typography variant="h5">
-                  Get a fully retina ready site when you build with Startup
-                  Framework. Websites look sharper and more gorgeous on devices
-                  with retina display support
-                </Typography>
-              </Box>
-              <Box>
-                <Typography variant="h5">Rayhan Curran</Typography>
-              </Box>
-            </Box>
-          </Box>
-        </Box>
+        <Box className="testimonial-list">{testimonials}</Box>
       </Box>
     </Box>
   );

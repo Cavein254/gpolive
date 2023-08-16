@@ -15,7 +15,7 @@ export const TestimonialData = [
   },
   {
     id: 3,
-    url: 'https://plus.unsplash.com/premium_photo-1670573802857-aeae2b087487?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=250&q=80',
+    url: 'https://images.unsplash.com/photo-1616805765352-beedbad46b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=250&q=80',
     name: 'Colins Odera',
     comment:
       'GPOL Career Agency exceeded my expectations in every way. From resume enhancement to interview coaching, their services are top-notch. They helped me present my qualifications in the best light and provided me with the tools to excel during interviews. Thanks to GPOL, I secured a fantastic job opportunity that aligns perfectly with my career goals.',
