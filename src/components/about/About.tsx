@@ -12,6 +12,7 @@ const About = () => {
             fontWeight: '100',
             fontSize: '1.2rem',
             textAlign: 'center',
+            textTransform: 'uppercase',
           }}
         >
           About Us

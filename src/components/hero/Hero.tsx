@@ -18,8 +18,7 @@ const Hero = () => {
               fontWeight: '400',
             }}
           >
-            Empowering Your Career Journey with{' '}
-            <span className="gpol">GPOL</span>
+            Empower Your Career Journey with <span className="gpol">GPOL</span>
           </Typography>
           <Typography
             variant="h5"
