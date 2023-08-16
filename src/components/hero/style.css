@@ -19,3 +19,16 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media only screen and (min-width: 641px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-text {
+    width: 50%;
+  }
+  .hero-img-container {
+    width: 50%;
+  }
+}
