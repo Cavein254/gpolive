@@ -17,10 +17,14 @@ const routesConfig = [
     element: <RegisterPage />,
   },
   {
+    path: '/home',
+    element: <Home />,
+  },
+  {
     element: <Layout />,
     children: [
       {
-        path: '/',
+        path: '/home',
         element: <Home />,
       },
     ],
