@@ -1,4 +1,5 @@
 import { Box } from '@mui/system';
+import About from '../components/about/About';
 import Hero from '../components/hero/Hero';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
     >
       {' '}
       <Hero />
+      <About />
     </Box>
   );
 };
