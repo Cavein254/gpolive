@@ -1,5 +1,5 @@
-import { Box, Button, Typography } from '@mui/material';
-import AboutImg from '../../assets/about.jpg';
+import { Box, Typography } from '@mui/material';
+import AboutImg from '../../assets/working.jpg';
 import './styles.css';
 const About = () => {
   return (
@@ -36,12 +36,15 @@ const About = () => {
               fontWeight: '200',
             }}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
-            minima quisquam, natus illo repellat necessitatibus modi id
-            consectetur temporibus, veritatis tempore. Qui harum laudantium
-            incidunt hic placeat veritatis, labore officiis.
+            A beacon of professional growth and guidance, GPOL is committed to
+            empowering individuals in their pursuit of fulfilling careers. With
+            a focus on personalized strategies, their expert team offers a range
+            of services designed to unlock potential, from career assessments to
+            resume enhancement. At GPOL, one size does not fit all. Our approach
+            is rooted in understanding each individual's unique strengths and
+            aspirations, ensuring that every client receives tailored advice and
+            support that resonates with their journey.
           </Typography>
-          <Button variant="outlined">Learn More</Button>
         </Box>
         <Box className="about-us-img-container">
           <img src={AboutImg} alt="aboutus" className="about-us-img" />
