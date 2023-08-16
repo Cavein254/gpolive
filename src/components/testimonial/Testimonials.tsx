@@ -5,7 +5,7 @@ import { TestimonialData } from './testmonydata';
 const Testimonials = () => {
   const testimonials = TestimonialData.map((item) => {
     return (
-      <Box className="testimonial-item" key={item.id}>
+      <Box className="testimonial-item" key={item.id} id="testimonials">
         <Box>
           <Box className="testimonial-img-container">
             <img className="testimonial-img" alt={item.name} src={item.url} />

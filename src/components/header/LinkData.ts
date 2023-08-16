@@ -12,7 +12,7 @@ export const HeaderLinks = [
   {
     id: 3,
     name: 'Testimonial',
-    path: '#testimony',
+    path: '#testimonials',
   },
   {
     id: 4,

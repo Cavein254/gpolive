@@ -4,7 +4,6 @@ import { BsFan } from 'react-icons/bs';
 
 import { Typography } from '@mui/material';
 import { BiLogInCircle } from 'react-icons/bi';
-import { Link } from 'react-router-dom';
 import { HeaderLinks } from '../header/LinkData';
 import './styles.css';
 
@@ -16,8 +15,8 @@ const Overlay = ({ isOpen, setIsOpen }: Props) => {
   const links = HeaderLinks.map((link) => {
     return (
       <Stack key={link.id}>
-        <Box className="overlay-link">
-          <Link to={link.path}>{link.name}</Link>
+        <Box className="overlay-link" onClick={() => setIsOpen(false)}>
+          <a href={link.path}>{link.name}</a>
         </Box>
       </Stack>
     );
