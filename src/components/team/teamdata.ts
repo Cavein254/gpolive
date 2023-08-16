@@ -13,7 +13,7 @@ export const TeamData = [
   },
   {
     id: 3,
-    name: 'Antony Nganga',
+    name: 'Mary Atieno',
     post: 'Mentor of Mentors',
     url: 'https://images.unsplash.com/photo-1602009786299-3a425d5a2bac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGFmcmljYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=250&q=60',
   },
