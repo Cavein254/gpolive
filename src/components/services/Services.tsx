@@ -52,6 +52,7 @@ const Services = () => {
           fontWeight: '100',
           fontSize: '1.2rem',
           textAlign: 'center',
+          textTransform: 'uppercase',
         }}
       >
         Our Services
