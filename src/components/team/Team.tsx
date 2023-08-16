@@ -8,13 +8,13 @@ const Team = () => {
       <Box className="team-container">
         <Box></Box>
         <Box className="team-social">
-          <Stack>
+          <Stack className="team-icon-container">
             <BsFacebook className="team-icon" />
           </Stack>
-          <Stack>
+          <Stack className="team-icon-container">
             <BsTwitter className="team-icon" />
           </Stack>
-          <Stack>
+          <Stack className="team-icon-container">
             <BsWhatsapp className="team-icon" />
           </Stack>
         </Box>

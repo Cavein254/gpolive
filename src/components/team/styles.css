@@ -1,9 +1,11 @@
-.section {
+.team {
   margin-top: 2rem;
 }
 .team-container {
   position: relative;
   height: 350px;
+  width: 350px;
+  border: lightgray 1px solid;
 }
 .team-social {
   position: absolute;
@@ -12,6 +14,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: lightgray 1px solid;
+}
+.team-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: lightgray 1px solid;
+  width: 100%;
 }
 .team-icon {
   font-size: 1.4rem;
