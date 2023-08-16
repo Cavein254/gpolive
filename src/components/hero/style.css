@@ -8,8 +8,11 @@
 .hero-text {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+}
+.hero-img-container {
+  margin-top: 1rem;
 }
 .hero-img {
   width: 100%;

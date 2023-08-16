@@ -1,5 +1,6 @@
-import { Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import { Link } from 'react-router-dom';
 import HeroImg from '../../assets/hero.jpg';
 import './style.css';
 
@@ -30,9 +31,23 @@ const Hero = () => {
             Your Success, Our Priority.
           </Typography>
         </Box>
-        <Box></Box>
+        <Box>
+          <Link to="#services">
+            <Button
+              variant="contained"
+              sx={{
+                fontFamily: 'Poppins',
+                backgroundColor: '#f60',
+                fontSize: '1.2rem',
+                borderRadius: 0,
+              }}
+            >
+              Discover Our Services
+            </Button>
+          </Link>
+        </Box>
       </Box>
-      <Box>
+      <Box className="hero-img-container">
         <img src={HeroImg} alt="Hero" className="hero-img" />
       </Box>
     </Box>
